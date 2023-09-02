@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aebcc57d-8378-45d7-a2cd-5e45856fca45">
+  <producedTypes>
+    <selectionType typeId="ddf10c6d-a9a0-4432-a09d-ebadf07b1cf7" valueTypeId="3cedcd67-3511-43bd-8133-ce2c167088c4"/>
+    <listType typeId="1bf3ed10-3e41-4f7e-acbb-322085fb3e7d" valueTypeId="54bdbbaa-19e8-4a50-b647-d5cdfde88253"/>
+    <managerType typeId="d782df9b-8d28-4f50-b202-a341034870c6" valueTypeId="f9460685-95ac-4ea9-9501-27a8b9eee894"/>
+    <recordSetType typeId="8c9cf40c-3566-41ab-8394-29e0e44a3e50" valueTypeId="3f9fb52d-2446-46ae-8cd4-ac095a57705e"/>
+    <recordKeyType typeId="88654985-f608-43e9-8b4f-34368ef4f23b" valueTypeId="7f0a3307-2d16-4860-b1e4-93f91e18b134"/>
+    <recordType typeId="bdd504a1-af96-4e5a-aa86-95d9eda94cfa" valueTypeId="25a31b1a-051e-4936-9b45-07482ca9bd72"/>
+  </producedTypes>
+  <name>СтоимостьБилетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость билетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e0ad5fb0-c7d2-4ff4-8429-06c685423d49">
+    <name>СтоимостьПроданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость проданных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0016445c-fff0-4cf5-a053-cc2aa4e273c2">
+    <name>СтоимостьПосещенных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость посещенных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="50796f38-aff2-4564-a25c-c8f90e0b7c5b">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

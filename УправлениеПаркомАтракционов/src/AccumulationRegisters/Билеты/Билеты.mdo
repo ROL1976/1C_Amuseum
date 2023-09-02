@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3676fd3-df45-4708-8be7-9395a31a98a6">
+  <producedTypes>
+    <selectionType typeId="a5bab207-6092-498c-8dc5-7f67fb476e49" valueTypeId="2aced4a5-1a40-4618-9cd7-116efbb7bcbe"/>
+    <listType typeId="18a681c7-c9b9-47c1-82a7-21c77967e559" valueTypeId="5ecdcf5e-5ef7-475a-9c1d-34dbf3fcf1f8"/>
+    <managerType typeId="b9dc2d23-4641-4a8c-b284-08f25693a07b" valueTypeId="6c02e842-fa8c-4593-8ad6-dde7db344d26"/>
+    <recordSetType typeId="2b73e199-33b9-4bd5-9ca4-0377ffb28c0a" valueTypeId="3872a884-f1e4-43ea-a9c1-0e6c7e00dc8d"/>
+    <recordKeyType typeId="048e226a-fd35-4c6e-b034-8205d26fc9a3" valueTypeId="2c6cd776-13d5-47f3-a9a1-70d1571ca03c"/>
+    <recordType typeId="3087caaa-7441-4cf8-adbe-85793b4d4c82" valueTypeId="a3308552-93d4-4e39-9ea4-098e3563ea4d"/>
+  </producedTypes>
+  <name>Билеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Билеты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="eee83880-8af7-44c5-9426-7c61f5945fe4">
+    <name>КоличествоБилетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество билетов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>1</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7f797660-36a7-4af3-a912-2c3e8faf79b0">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="faf1d9e5-02b8-4ab4-bdb9-d15dc3d5b889">
+    <name>Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПродажаБилета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

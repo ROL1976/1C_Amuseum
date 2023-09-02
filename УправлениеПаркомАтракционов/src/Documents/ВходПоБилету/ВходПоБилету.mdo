@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05dc795d-5e0b-4682-9357-ea73a26c72ea">
+  <producedTypes>
+    <objectType typeId="34dc3a5a-be96-4005-afac-ff844a05565a" valueTypeId="c50b7956-924d-484b-b02b-a8417532902c"/>
+    <refType typeId="332d92bc-937e-406e-aa5b-81c081d45c45" valueTypeId="c3aed827-5f09-4840-9800-a6b1b8174f41"/>
+    <selectionType typeId="9973a1b4-ad41-4749-8111-f443a1f787ac" valueTypeId="e510e60c-6d5c-4b5e-91fb-3d1793b557d6"/>
+    <listType typeId="5269cc5d-770d-46e8-92c4-698d641fb223" valueTypeId="9948cf42-ff61-4b34-9d57-5a69cc83ab66"/>
+    <managerType typeId="66f2b657-17ca-42af-a72b-5ec49841f715" valueTypeId="5ef41af7-c230-4d9e-8bc4-23d42b60ec50"/>
+  </producedTypes>
+  <name>ВходПоБилету</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вход по билету</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВходПоБилету.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.Билеты</registerRecords>
+  <registerRecords>AccumulationRegister.СтоимостьБилетов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="da6d3c5d-bee7-4176-a39f-53b01525dc44">
+    <name>ПосещаемыйАттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посещаемый аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d536efe-8718-451c-9abd-6a02e3fd8447">
+    <name>Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПродажаБилета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Аттракцион</name>
+      <field>Document.ВходПоБилету.Attribute.ПосещаемыйАттракцион</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

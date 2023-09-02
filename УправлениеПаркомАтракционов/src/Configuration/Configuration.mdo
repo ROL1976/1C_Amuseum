@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd228571-d4ac-4184-a4c3-c8164ca639c1">
+  <name>УправлениеПаркомАтракционов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление парком атракционов</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f04e0017-814a-4d37-aec0-94008e0d0cf9"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="d00649e6-2ec7-4ab9-aacb-af75fdb40ccb"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="d425146a-50db-4b2d-8c1f-d56da2ee0692"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="67364937-2354-425b-b5bd-ed2235b86119"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="41a2e342-4285-47c8-885d-b2668aef4b32"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="66b6b3d4-7c3a-4670-8c2c-30af4cc8e23b"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="9e6a7c03-c9e7-49ca-86eb-b8e15de77bf0"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>ROL</vendor>
+  <version>1.0.0.1</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
+  <languages uuid="1d9a428f-214a-4fe0-8959-3e383a9df5cd">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <commonModules>CommonModule.СервисныеФункции</commonModules>
+  <catalogs>Catalog.Аттракционы</catalogs>
+  <documents>Document.ВходПоБилету</documents>
+  <documents>Document.ПродажаБилета</documents>
+  <reports>Report.ОтчетОПродажах</reports>
+  <accumulationRegisters>AccumulationRegister.Билеты</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.СтоимостьБилетов</accumulationRegisters>
+</mdclass:Configuration>
